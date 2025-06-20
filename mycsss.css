@@ -1,0 +1,177 @@
+*{font-family: "Poetsen One";
+text-decoration: none; }
+.container{
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+header{
+    background: url(images/cafe_1.jpg)no-repeat center/cover;
+}
+header.container{
+height: 720px;
+position: relative;
+}
+header h1{
+    font-size: 44px;
+    padding-top: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+header nav{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    list-style: none;
+
+}
+header nav ul li a:link, :visited{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    text-decoration: underline;
+}
+main h2{
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: .05em;
+    margin-bottom: 80px;
+}
+.msgsec{
+    background-color: #fbfaf7;
+}
+.msgsec p{
+    text-align: center;
+    line-height: 1.75;
+    margin-bottom: 40px;
+}
+.msgsec h3{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+}
+.datesec{
+    background-color: #efe8d9;
+    padding-bottom: 120px;
+}
+.datedetailsec{
+    font-size: 72px;
+    background-color: #ffffff
+    ;
+    padding: 40px 64px;
+    line-height: 1.2;
+    width: 40%;
+    display: inline-block;
+    transform: translateX(-100px);
+}
+.datecontainer{
+    display: flex;
+}
+
+iframe{
+    width: 100%;
+}
+.photoGall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 16px; 
+  padding: 20px;
+}
+
+.photoGall .item {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.photoGall .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block;
+}
+.photoGall .item:hover img {
+  transform: scale(2); 
+}
+.photoGall .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease; 
+}
+
+.formsec{
+background-color: #efe8d9;
+padding-bottom: 120px;
+}
+form{
+    width: 600px;
+    margin: 0 auto;
+}
+input[type="text"],input[type="email"], textarea{
+    width: 100%;
+    background-color: #ffffff;
+    margin-top: 5px;
+    padding: 4px 5px;
+    border:1px solid #cccccc;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: 16px;
+ margin-right: 4px;
+    height: 16px;
+}
+textarea{
+    height:148px;
+    margin-bottom: 30px;
+}
+form >p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    background-color: black;
+    color: #ffffff;
+    padding: 18px 80px;
+}
+input[type="submit"]:hover{
+    background-color: brown;
+    margin-left: 20px;
+}
+footer{
+    background-color: aqua;
+    color: black;
+    padding: 14px 10px 20px;
+    text-align: center;
+}
+@media screen and (max-width:640px) {
+    .container,header nav ul{
+        width: 100%;
+    }
+    body{
+        font-size: 16px;
+    }
+    main h2{
+        font-size: 44px;
+    }
+    .datecontainer{
+        flex-direction: column;
+    }
+    .datedetailsec{
+        font-size: 44px;
+        transform: translateX(-100px);
+    }
+}
